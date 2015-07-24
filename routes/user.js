@@ -2,6 +2,7 @@
 /*
  * GET users listing.
  */
+var data = require("./../models/user.js")
 
 exports.list = function(req, res){
   res.send("respond with a resource");
@@ -15,8 +16,11 @@ exports.register = function(req,res){
 }
 //注册用户
 exports.reg = function(req,res){
-	
-	res.render('register/register.ejs',{
-		title:"注册"
+	var result = data.addRegister(req.body,function(err,rows){
+		res.render('./',{
+			title:"注册"
+		});
 	});
+	
+	
 }

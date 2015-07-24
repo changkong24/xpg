@@ -61,34 +61,3 @@ exports.index = function(req, res){
   	}
 };
 
-
-//本周特价
-var bztj = function(){
-	var data = [];
-	data.push({
-		title:"板栗特价",
-		content:"板栗原价¥15,现特价¥8",
-		url:"www.baidu.com"
-	})
-	data.push({
-		title:"荔枝特价",
-		content:"板栗原价¥15,现特价¥8",
-		url:"www.baidu.com"
-	})
-	data.push({
-		title:"板栗特价",
-		content:"板栗原价¥15,现特价¥8",
-		url:"www.baidu.com"
-	})
-	data.push({
-		title:"板栗特价",
-		content:"板栗原价¥15,现特价¥8",
-		url:"www.baidu.com"
-	})
-	data.push({
-		title:"板栗特价",
-		content:"板栗原价¥15,现特价¥8",
-		url:"www.baidu.com"
-	})
-	return data;
-}
